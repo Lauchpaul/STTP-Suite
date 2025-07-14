@@ -255,8 +255,15 @@ Consequences:
 | **Feature Requests** | Cool ideas, but unless they align with my own nerd-itch they may never land. |
 
 **What you can do instead**  
-- Fork the repo and hack away.  Do what you want! I dont care if you don't name me or sell it. 
-- Tag me if you publish something cool; I I'll notice.  (You can Email me or add me on Discord. User: Lauchpaul)
+- Fork the repo and hack away.  Do what you want! I dont care if you don't name me or even sell it💀
+- Tag me if you publish something cool;  I'll notice.  (You can E-mail me or add me on Discord. User: Lauchpaul)
 - Treat the code as a reference / inspiration rather than a polished product.
 
 In short: use at your own risk, contribute if you like, but **don't expect anything** regarding maintainer responsiveness.
+
+## ✨ Anything else?
+
+- The code has Comments, but don't expect good documentation. For STTPS and STTPS use the !help command in the Chatter programm.
+- Like I said, the code isn't 100% bug free, i would recommend using two old Laptops.
+- The scripts were testet only in Debian. I'm not 100% sure if this works on other Distros.
+- If you any questions, send me an E-mail or Discord... User: Lauchpaul
