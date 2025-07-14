@@ -288,3 +288,16 @@ Each ESTTPS frame contains:
 
 ## 📁 Project Structure
 
+STTP-Suite/
+├─ STTP/
+│  ├─ sttp-receiver.py
+│  ├─ sttp-sender.py
+│  ├─ sttp-chatter.py
+├─ STTPS/
+│  ├─ sttps-sender.py
+│  ├─ sttps-reveiver.py
+│  ├─ sttps-chatter.py
+├─ ESTTPS/
+│  ├─ esttps-chatter.py
+├─ README.md
+├─ LICENSE.md
