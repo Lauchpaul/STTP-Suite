@@ -4,13 +4,15 @@ The **STTP-Protocol-Suite** is a collection of experimental Layer 2 protocols th
 
 Originally developed as a learning project, this suite explores how real data travels across networks at the lowest level, and how to build a functioning protocol from scratch – from raw bytes to encryption and reliability.
 
-It's **not** really a serious Project, just a bit fooling around with Frames. Most is written by Ai because i don't code Professionally. I configure Networks and stuff. 
+It's **not** really a serious Project, just a bit fooling around with Frames. Most is written by Ai because i don't code Professionally. I configure Networks and stuff, so I don't have much expirence with Python.
 
 I made this dumpsterfire in 11 Days so don't expect it to be good...
 
 I made this in Juli 2025, I am in my first year of Vocational Training. I only have one year of experience in IT.
 
 So please don't flame me for this dumpsterfire that I call code😭
+
+**NOTHING HERE IS PROFESSIONAL!!**
 
 
 ---
@@ -90,6 +92,7 @@ REQ -> KEY -> AES -> ACK
 - Re-keying happens automatically after 10 encrypted messages
 - Still uses EtherType `0x88B5`
 - All payloads are manually padded to fulfill Ethernet’s minimum frame size
+- STTPS does **NOT** provide Integrity and Authenticity. 
 
 
 ---
@@ -197,12 +200,12 @@ Many scripts (like `sttp-reciver.py`, `sttps-chatter.py`, `sttps_sender.py`, etc
 ---
 
 
-### 3️⃣ Recommended: Use `chatter_esttps_finale.py`
+### 3️⃣ Recommended: Use `chatter_esttps.py`
 
 The **ESTTPS Chatter** script allows **command-line arguments** to avoid hardcoding:
 
 ```bash
-sudo python3 chatter_esttps_finale.py -i eth0 -m de:ad:be:ef:00:01 -n <username>
+sudo python3 chatter_esttps.py -i eth0 -m de:ad:be:ef:00:01 -n <username>
 ```
 
 | Option | Purpose                      |
