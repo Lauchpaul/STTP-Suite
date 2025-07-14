@@ -14,6 +14,13 @@ So please don't flame me for this dumpsterfire that I call code😭
 
 ---
 
+## Scripts
+
+There are always three scripts. A sender, a receiver and a chatter who can do both.
+
+
+---
+
 ## 📦 Included Protocols
 
 | Protocol | Encryption | Features |
@@ -82,7 +89,7 @@ REQ -> KEY -> AES -> ACK
 
 ## 🔹 ESTTPS — *Extended Secure Text Transfer Protocol Secure*
 
-> "Yes. It has sessions. And flags. And fragmentation. And probably sentience."
+> "Yes. It has sessions. And flags. And fragmentation. And probably alot of bugs."
 
 ESTTPS is a fully-featured evolution of STTPS. It introduces **sessions, reliable transmission, fragmentation**, and **custom protocol headers** – all still at Layer 2.
 
@@ -140,3 +147,71 @@ STTP-Suite/
 ├─ README.md
 ├─ LICENSE.md
 ```
+---
+
+## 🔧 How to Start
+
+### 1️⃣ Requirements
+- Linux system (due to raw socket requirements)
+- Python 3.10 or newer
+- `cryptography` module:
+  ```bash
+  pip install cryptography
+````
+
+* **Run with root privileges**:
+
+  ```bash
+  sudo python3 your_script.py
+  ```
+
+---
+
+### 2️⃣ ⚠️ Hardcoded Configuration
+
+Many scripts (like `reciver.py`, `STTPV1_Sender_Script.py`, `sttps_sender.py`, etc.) contain **hardcoded values** that **must be changed** before use:
+
+| Setting     | Description                            | Example                |
+| ----------- | -------------------------------------- | ---------------------- |
+| `INTERFACE` | Name of your network interface         | `"eth0"` or `"enp3s0"` |
+| `SRC_MAC`   | Spoofed source MAC address             | `"de:ad:be:ef:00:02"`  |
+| `DEST_MAC`  | Destination MAC address (or broadcast) | `"ff:ff:ff:ff:ff:ff"`  |
+
+> You **must** adjust these to match your system or you’ll get socket binding errors.
+
+---
+
+### 3️⃣ ✅ Recommended: Use `chatter_esttps_finale.py`
+
+The **ESTTPS Chatter** script allows **command-line arguments** to avoid hardcoding:
+
+```bash
+sudo python3 chatter_esttps_finale.py -i eth0 -m de:ad:be:ef:00:01 -n <username>
+```
+
+| Option | Purpose                      |
+| ------ | ---------------------------- |
+| `-i`   | Interface name               |
+| `-m`   | Source MAC address (spoofed) |
+| `-n`   | Username (max. 20 bytes)     |
+| `-v`   | *(optional)* Verbose mode    |
+
+Once started, use `!help` to list all commands.
+
+---
+
+### 4️⃣ 🧪 First Test Setup (STTP or STTPS)
+
+1. Run `reciver.py` or `sttps_receiver.py` on one machine.
+2. Run the matching sender script on the other.
+3. Ensure both machines use matching EtherType and interface.
+4. STTP messages should appear directly; STTPS messages require key exchange.
+
+---
+
+### 5️⃣ 🫡 Tip for Testing
+
+* Use tools like `ip link` or `ifconfig` to find interface names
+* Disable firewalls if frames are being dropped
+---
+
