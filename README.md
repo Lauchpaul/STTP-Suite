@@ -1,6 +1,6 @@
-# STTP-Suite
+# THE STTP-PROTOCOL-SUITE
 
-**STTP-Suite** is a collection of experimental Layer 2 protocols that transmit UTF-8 text directly over raw Ethernet. No IP. No TCP. No ports. Just frames.
+The **STTP-Protocol-Suite** is a collection of experimental Layer 2 protocols that transmit UTF-8 text directly over raw Ethernet. No IP. No TCP. No ports. Just frames.
 
 Originally developed as a learning project, this suite explores how real data travels across networks at the lowest level, and how to build a functioning protocol from scratch – from raw bytes to encryption and reliability.
 
@@ -12,6 +12,7 @@ I made this in Juli 2025, I am in my first year of Vocational Training. I only h
 
 So please don't flame me for this dumpsterfire that I call code😭
 
+
 ---
 
 ## Scripts
@@ -21,6 +22,7 @@ There are always three scripts. A sender, a receiver and a chatter who can do bo
 
 ---
 
+
 ## 📦 Included Protocols
 
 | Protocol | Encryption | Features |
@@ -29,7 +31,9 @@ There are always three scripts. A sender, a receiver and a chatter who can do bo
 | **STTPS**   | ✅ AES + RSA | Secure peer-to-peer messaging |
 | **ESTTPS**  | ✅ AES + RSA | Sessions, reliability, flags, CRC |
 
+
 ---
+
 
 ## 🔹 STTP — *Simple Text Transfer Protocol*
 
@@ -51,7 +55,9 @@ STTP is perfect for:
 - Understanding raw socket communication
 - Experimenting with protocol design at the byte level
 
+
 ---
+
 
 ## 🔹 STTPS — *Secure Text Transfer Protocol (Secure)*
 
@@ -85,7 +91,9 @@ REQ -> KEY -> AES -> ACK
 - Still uses EtherType `0x88B5`
 - All payloads are manually padded to fulfill Ethernet’s minimum frame size
 
+
 ---
+
 
 ## 🔹 ESTTPS — *Extended Secure Text Transfer Protocol Secure*
 
@@ -129,7 +137,9 @@ Each ESTTPS frame contains:
 - **Verbose debugging & CLI interface**
 - **Fully terminal-controlled (no GUI required)**
 
+
 ---
+
 
 ## 📁 Project Structure
 ```bash
@@ -147,7 +157,10 @@ STTP-Suite/
 ├─ README.md
 ├─ LICENSE.md
 ```
+
+
 ---
+
 
 ## 🔧 How to Start
 
@@ -157,28 +170,32 @@ STTP-Suite/
 - `cryptography` module:
   ```bash
   pip install cryptography
-```
-You have to run it with root privileges
+  ```
+Run it with root privileges!
 
 ```bash
-  sudo python3 your_script.py
- ```
+sudo python3 your_script.py
+```
+
 
 ---
 
+
 ### 2️⃣ ⚠️ Hardcoded Configuration
 
-Many scripts (like `reciver.py`, `STTPV1_Sender_Script.py`, `sttps_sender.py`, etc.) contain **hardcoded values** that **must be changed** before use:
+Many scripts (like `sttp-reciver.py`, `sttps-chatter.py`, `sttps_sender.py`, etc.) contain **hardcoded values** that **must be changed** before use:
 
 | Setting     | Description                            | Example                |
 | ----------- | -------------------------------------- | ---------------------- |
 | `INTERFACE` | Name of your network interface         | `"eth0"` or `"enp3s0"` |
 | `SRC_MAC`   | Spoofed source MAC address             | `"de:ad:be:ef:00:02"`  |
-| `DEST_MAC`  | Destination MAC address (or broadcast) | `"ff:ff:ff:ff:ff:ff"`  |
+| `DEST_MAC`  | Destination MAC address (optional)     | `"ff:ff:ff:ff:ff:ff"`  | 
 
 > You **must** adjust these to match your system or you’ll get socket binding errors.
 
+
 ---
+
 
 ### 3️⃣ Recommended: Use `chatter_esttps_finale.py`
 
@@ -197,7 +214,9 @@ sudo python3 chatter_esttps_finale.py -i eth0 -m de:ad:be:ef:00:01 -n <username>
 
 Once started, use `!help` to list all commands.
 
+
 ---
+
 
 ### 4️⃣ First Test Setup (STTP or STTPS)
 
@@ -206,11 +225,14 @@ Once started, use `!help` to list all commands.
 3. Ensure both machines use matching EtherType and interface.
 4. STTP messages should appear directly; STTPS messages require key exchange.
 
+
 ---
 
 ### 5️⃣ Tip for Testing
 
 * Use tools like `ip link` or `ifconfig` to find interface names
 * Disable firewalls if frames are being dropped
+
+
 ---
 
