@@ -1,7 +1,7 @@
 """
 STTPS Protocol - Secure Text Transfer Protocol Secure
 
-THIS IS JUST THE RECIEVER SCRIPT!!!!
+THIS IS JUST THE RECEIVER SCRIPT!!!!
 
 This protocol is designed for encrypted peer-to-peer communication over Ethernet (Layer 2),
 using a minimal frame format and a hybrid cryptographic model (RSA + AES). 
