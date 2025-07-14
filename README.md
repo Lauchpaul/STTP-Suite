@@ -243,7 +243,7 @@ Once started, use `!help` to list all commands.
 ## 🛑 Maintainer Disclaimer
 
 > *“Will this repo be actively maintained?”*  
-> Short answer: **probably not**.  
+> Short answer: **fuck no**😭  
 
 This project started as a personal learning sandbox. Once the initial curiosity fades there is a **high chance I’ll forget it exists and move on to the next shiny protocol idea**.  
 Consequences:
@@ -253,11 +253,10 @@ Consequences:
 | **Merge / Pull Requests** | Might sit in limbo for ages. Don’t take it personally. |
 | **Issue Tracker** | Used mostly as a TODO pad for myself. Response times can vary from minutes to never. |
 | **Feature Requests** | Cool ideas, but unless they align with my own nerd-itch they may never land. |
-| **Security Reports** | If you find a critical flaw, ping me directly (email in profile). Otherwise it’ll drown in notifications. |
 
 **What you can do instead**  
-- Fork the repo and hack away.  
-- Tag me if you publish something cool; I **might** notice.  
+- Fork the repo and hack away.  Do what you want! I dont care if you don't name me or sell it. 
+- Tag me if you publish something cool; I I'll notice.  (You can Email me or add me on Discord. User: Lauchpaul)
 - Treat the code as a reference / inspiration rather than a polished product.
 
-In short: use at your own risk, contribute if you like, but **manage your expectations** regarding maintainer responsiveness.
+In short: use at your own risk, contribute if you like, but **don't expect anything** regarding maintainer responsiveness.
