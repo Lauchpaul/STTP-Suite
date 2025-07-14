@@ -1,6 +1,7 @@
-# THE STTP-PROTOCOL-SUITE
+# ✨**THE STTP-PROTOCOL-SUITE**✨
 
-The **STTP-Protocol-Suite** is a collection of experimental Layer 2 protocols that transmit UTF-8 text directly over raw Ethernet. No IP. No TCP. No ports. Just frames.
+
+The **STTP-Protocol-Suite** is a collection of experimental Layer 2 protocols that transmit UTF-8 text directly over raw Ethernet. No IP. No TCP. No ports. Just frames. STTP stands for Simple Text Transfer Protocol.
 
 Originally developed as a learning project, this suite explores how real data travels across networks at the lowest level, and how to build a functioning protocol from scratch – from raw bytes to encryption and reliability.
 
@@ -239,3 +240,24 @@ Once started, use `!help` to list all commands.
 
 ---
 
+## 🛑 Maintainer Disclaimer
+
+> *“Will this repo be actively maintained?”*  
+> Short answer: **probably not**.  
+
+This project started as a personal learning sandbox. Once the initial curiosity fades there is a **high chance I’ll forget it exists and move on to the next shiny protocol idea**.  
+Consequences:
+
+| Item | Reality Check |
+|------|---------------|
+| **Merge / Pull Requests** | Might sit in limbo for ages. Don’t take it personally. |
+| **Issue Tracker** | Used mostly as a TODO pad for myself. Response times can vary from minutes to never. |
+| **Feature Requests** | Cool ideas, but unless they align with my own nerd-itch they may never land. |
+| **Security Reports** | If you find a critical flaw, ping me directly (email in profile). Otherwise it’ll drown in notifications. |
+
+**What you can do instead**  
+- Fork the repo and hack away.  
+- Tag me if you publish something cool; I **might** notice.  
+- Treat the code as a reference / inspiration rather than a polished product.
+
+In short: use at your own risk, contribute if you like, but **manage your expectations** regarding maintainer responsiveness.
