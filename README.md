@@ -157,13 +157,12 @@ STTP-Suite/
 - `cryptography` module:
   ```bash
   pip install cryptography
-````
+```
+You have to run it with root privileges
 
-* **Run with root privileges**:
-
-  ```bash
+```bash
   sudo python3 your_script.py
-  ```
+ ```
 
 ---
 
@@ -181,7 +180,7 @@ Many scripts (like `reciver.py`, `STTPV1_Sender_Script.py`, `sttps_sender.py`, e
 
 ---
 
-### 3️⃣ ✅ Recommended: Use `chatter_esttps_finale.py`
+### 3️⃣ Recommended: Use `chatter_esttps_finale.py`
 
 The **ESTTPS Chatter** script allows **command-line arguments** to avoid hardcoding:
 
@@ -200,7 +199,7 @@ Once started, use `!help` to list all commands.
 
 ---
 
-### 4️⃣ 🧪 First Test Setup (STTP or STTPS)
+### 4️⃣ First Test Setup (STTP or STTPS)
 
 1. Run `reciver.py` or `sttps_receiver.py` on one machine.
 2. Run the matching sender script on the other.
@@ -209,7 +208,7 @@ Once started, use `!help` to list all commands.
 
 ---
 
-### 5️⃣ 🫡 Tip for Testing
+### 5️⃣ Tip for Testing
 
 * Use tools like `ip link` or `ifconfig` to find interface names
 * Disable firewalls if frames are being dropped
