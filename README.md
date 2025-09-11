@@ -1,4 +1,4 @@
-# ✨**THE STTP-PROTOCOL-SUITE**✨
+# **THE STTP-PROTOCOL-SUITE**
 
 
 The **STTP-Protocol-Suite** is a collection of experimental Layer 2 protocols that transmit UTF-8 text directly over raw Ethernet. No IP. No TCP. No ports. Just frames. STTP stands for Simple Text Transfer Protocol.
@@ -26,7 +26,7 @@ There are always three scripts. A sender, a receiver and a chatter who can do bo
 ---
 
 
-## 📦 Included Protocols
+## Included "Protocols"
 
 | Protocol | Encryption | Features |
 |----------|------------|----------|
@@ -34,13 +34,9 @@ There are always three scripts. A sender, a receiver and a chatter who can do bo
 | **STTPS**   | ✅ AES + RSA | Secure peer-to-peer messaging |
 | **ESTTPS**  | ✅ AES + RSA | Sessions, reliability, flags, CRC |
 
-
 ---
 
-
-## 🔹 STTP — *Simple Text Transfer Protocol*
-
-> "No headers, no checks, just vibes."
+## STTP — *Simple Text Transfer Protocol*
 
 STTP is a barebones Ethernet protocol built for pure learning purposes.
 
@@ -62,9 +58,7 @@ STTP is perfect for:
 ---
 
 
-## 🔹 STTPS — *Secure Text Transfer Protocol (Secure)*
-
-> "Like STTP – but secret."
+## STTPS — *Secure Text Transfer Protocol (Secure)*
 
 STTPS builds upon STTP by introducing asymmetric encryption with a hybrid **RSA + AES** model.
 
@@ -261,7 +255,7 @@ Consequences:
 
 In short: use at your own risk, contribute if you like, but **don't expect anything** regarding maintainer responsiveness.
 
-## ✨ Anything else?
+##  Anything else?
 
 - The code has Comments, but don't expect good documentation. For STTPS and STTPS use the !help command in the Chatter programm.
 - Like I said, the code isn't 100% bug free, i would recommend using two old Laptops.
